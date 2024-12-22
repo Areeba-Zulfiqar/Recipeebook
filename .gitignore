@@ -1,0 +1,5 @@
+# Ignore system-specific files and directories
+AppData/
+Application Data/
+Temporary Internet Files/
+History/
