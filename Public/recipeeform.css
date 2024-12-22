@@ -1,0 +1,107 @@
+/* General styles for the form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #4CAF50; /* Same border color as button background */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Nutrition section */
+h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#nutrition-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#nutrition-fields input {
+    width: 48%; /* Two inputs per row */
+}
+
+#time-section {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Time fields styles */
+#prepTime, #cookTime {
+    width: 48%; /* Two fields per row */
+}
+
+/* Image upload section */
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Styling both buttons in a row */
+button[type="submit"], button[type="button"] {
+    width: 48%; /* Set both buttons to 48% width to align side by side */
+    margin: 10px 1%; /* Add margin to create space between buttons */
+}
+
+button[type="button"] {
+    background-color: #f44336;
+    border: 1px solid #f44336; /* Border color matching button background */
+}
+
+button[type="button"]:hover {
+    background-color: #e53935;
+}

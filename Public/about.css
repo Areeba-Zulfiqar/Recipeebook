@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#8d8585;
+    color: #333; /* Text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e0d0d;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+  
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+header nav ul li {
+    margin-left: 20px;
+}
+  
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+header .cta .button,
+  .hero .button {
+    background-color: #f11808;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+h1 {
+    padding: 1rem;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#demo {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #f0f0f0; /* Light grey background for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+/* About Us section styles */
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #b60404; /* Accent color for heading */
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #555; /* Subtle text color */
+}
+
+.about-image {
+    flex: 0 0 600px; /* Adjust flex basis to accommodate larger image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 550px; /* 5 times larger width */
+    height: 550px; /* 5 times larger height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #0c0a0a; /* Accent border */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0a090a;
+    color: white;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}

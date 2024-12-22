@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Stack sections vertically */
+}
+
+/* Top Profile Section with Triangle Edge */
+.top-profile-section {
+    position: relative;
+}
+
+.triangle-edge {
+    background-color: #2d2d2d; /* Dark background */
+    color: white;
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+    text-align: center;
+}
+
+.profile-info {
+    position: relative;
+}
+
+.profile-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-info h1 {
+    margin: 10px 0;
+}
+
+.profile-info p {
+    color: #ccc;
+}
+
+/* Left Side Styles */
+.left-side {
+    width: 35%;
+    background-color: #f7f0e6;
+    padding: 20px;
+}
+
+.summary, .contact, .education, .skills {
+    margin-bottom: 20px;
+}
+
+.summary h3, .contact h3, .education h3, .skills h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.summary p, .contact p, .education p, .skills ul {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    margin-bottom: 5px;
+}
+
+/* Right Side Styles */
+.right-side {
+    width: 65%;
+    padding: 20px;
+}
+
+.work-experience, .references {
+    margin-bottom: 30px;
+}
+
+.work-experience h3, .references h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.work-experience p, .references p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.work-experience ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.work-experience ul li {
+    margin-bottom: 5px;
+}
+
+/* Icons for contact details */
+.icon-email::before {
+    content: "\2709"; /* Email symbol */
+    margin-right: 10px;
+}
+
+.icon-phone::before {
+    content: "\260E"; /* Phone symbol */
+    margin-right: 10px;
+}
+
+.icon-location::before {
+    content: "\1F4CD"; /* Location symbol */
+    margin-right: 10px;
+}

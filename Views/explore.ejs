@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Recipe Book</h1>
+    </header>
+
+    <main id="mainContent">
+        <!-- Main Content Initially -->
+        <section id="welcome">
+            <hr> 
+            <h2>Discover the Best Recipes</h2>
+            <p>Click the button below to explore a variety of delicious recipes.</p>
+            <button id="exploreButton">Explore Recipes</button>
+        </section>
+
+        <!-- Explore Recipes Section (Hidden by Default) -->
+        <section id="recipesSection" style="display: none;">
+            <h2>Explore Recipes</h2>
+            <div id="recipeList">
+                <!-- Recipe items will be dynamically added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <script src="explore.js"></script>
+</body>
+</html>

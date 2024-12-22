@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>Recipe Haven</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/service">Services</a></li>
+            <li><a href="/review">Reviews</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cta">
+        <a href="/registration" class="button">LOGIN</a>
+    </div>
+  </header>
+  <div class="login-container">
+    <h2>CONTACT US</h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+      <input type="text" id="username" placeholder="Username" required><br/>
+      <input type="email" id="email" placeholder="Email" required><br/>
+      <input type="text" id="subject" placeholder="Subject" required><br/>
+      <textarea id="message" placeholder="Message" required></textarea><br/>
+      <button type="submit">SUBMIT</button><br/><br/>
+      <hr/><br/>
+      <div id="error-message" class="error-message"></div>
+    </form>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>

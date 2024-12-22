@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Custom Recipe</title>
+    <link rel="stylesheet" href="recipeeform.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Creation</h1>
+    </header>
+    <form id="recipeForm">
+        <input type="text" id="name" placeholder="Recipe Name" required>
+        <select id="category" required>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Main Course">Main Course</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Drink">Drink</option>
+            <option value="Snack">Snack</option>
+            <option value="Soup">Soup</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Side Dish">Side Dish</option>
+        </select>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <textarea id="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+        <textarea id="instructions" placeholder="Instructions" required></textarea>
+        <input type="number" id="prepTime" placeholder="Preparation Time (in minutes)" required>
+        <input type="number" id="cookTime" placeholder="Cooking Time (in minutes)" required>
+        <p>Or upload an image:</p>
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+        
+        <h3>Nutrition (optional)</h3>
+        <input type="number" id="calories" placeholder="Calories">
+        <input type="number" id="protein" placeholder="Protein (g)">
+        <input type="number" id="carbs" placeholder="Carbs (g)">
+        <input type="number" id="fat" placeholder="Fat (g)">
+        <input type="number" id="sugar" placeholder="Sugar (g)">
+        <input type="number" id="fiber" placeholder="Fiber (g)">
+    
+        <button type="submit">Create Recipe</button>
+        <button type="button" onclick="closeRecipeForm()">Close</button>
+    </form>
+    
+    <script src="recipeeform.js"></script>
+</body>
+</html>

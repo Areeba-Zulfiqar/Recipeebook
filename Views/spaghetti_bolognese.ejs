@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= recipe.name %> Recipe</title>
+    <link rel="stylesheet" href="/recipees.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= recipe.name %> Recipe</h1>
+        <img src="/<%= recipe.imageUrl %>" alt="<%= recipe.name %>" style="max-width: 100%; height: auto;">
+        
+        <h3>Category:</h3>
+        <p><%= recipe.category %></p>
+        <h3>Description:</h3>
+        <p><%= recipe.description %></p>
+
+        <h3>Ingredients:</h3>
+        <ul>
+            <% recipe.ingredients.forEach(function(ingredient) { %>
+                <li><%= ingredient %></li>
+            <% }); %>
+        </ul>
+        
+        <h3>Instructions:</h3>
+        <ol>
+            <% recipe.instructions.forEach(function(instruction) { %>
+                <li><%= instruction %></li>
+            <% }); %>
+        </ol>
+
+        <h3>Preparation Time:</h3>
+        <p><%= recipe.prepTime %> minutes</p>
+
+        <h3>Cooking Time:</h3>
+        <p><%= recipe.cookTime %> minutes</p>
+
+        <h3>Nutritional Information:</h3>
+        <ul>
+            <% if (recipe.nutrition) { %>
+                <li>Calories: <%= recipe.nutrition.calories %> kcal</li>
+                <li>Protein: <%= recipe.nutrition.protein %> g</li>
+                <li>Carbs: <%= recipe.nutrition.carbs %> g</li>
+                <li>Fat: <%= recipe.nutrition.fat %> g</li>
+                <li>Sugar: <%= recipe.nutrition.sugar %> g</li>
+                <li>Fiber: <%= recipe.nutrition.fiber %> g</li>
+            <% } else { %>
+                <li>Nutritional information not available</li>
+            <% } %>
+        </ul>
+
+        <button onclick="window.history.back()">Back</button>
+    </div>
+</body>
+
+</html>

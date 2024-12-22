@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="registration.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>Recipe Haven</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/service">Services</a></li>
+            <li><a href="/review">Reviews</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cta">
+        <a href="/registration" class="button">LOGIN</a>
+    </div>
+  </header>
+  <div class="login-container">
+    <h2>LOGIN</h2>
+    <p>Have an account?</p>
+    <form id="loginForm" onsubmit="return validateForm()">
+      <input type="text" id="username" placeholder="Username" required><br/>
+      <input type="email" id="email" placeholder="Email" required><br/>
+      <input type="tel" id="phone" placeholder="Phone Number" pattern="\d{10}" title="Phone number should be 10 digits" required><br/>
+      <input type="password" id="password" placeholder="Password" required 
+             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+             title="Password must contain at least 8 characters, one uppercase, one lowercase, one number, and one special character!"><br/>
+      <button type="submit">Sign In</button><br/><br/>
+      <div class="options">
+        <label>
+          <input type="checkbox" name="remember"> Remember Me<br/>
+        </label>
+        <a href="#" class="forgot-password">Forgot Password</a><br/>
+      </div>
+      <p class="or"> — Or Sign In With — </p>
+      <div class="social-buttons">
+        <button class="facebook">Facebook</button>
+        <button class="twitter">Twitter</button>
+      </div>
+      <div id="error-message" class="error-message"></div>
+    </form>
+  </div>
+  <script src="registration.js"></script>
+</body>
+</html>
